@@ -2,14 +2,18 @@ import './App.css';
 import { ThemeProvider } from '@mui/material/styles';
 import { customTheme, Font } from './theme';
 import { MyButton } from './components/Button';
+import * as FeatherIcon from 'react-feather';
 
 function App() {
   return (
     <ThemeProvider theme={customTheme}>
       <Font />
       <div className="App">
-        <MyButton color="primary">Button</MyButton>
-        <MyButton color="danger">Button</MyButton>
+        <MyButton color="primary" endIcon={<FeatherIcon.ChevronDown size={24} />}>Primary</MyButton>
+        <MyButton color="secondary" startIcon={<FeatherIcon.Award size={24} />}>Secondary</MyButton>
+        <MyButton color="danger">Danger</MyButton>
+        <MyButton color="danger" disabled>Disabled</MyButton>
+        <MyButton color="danger" loading variant="contained">Loading</MyButton>
       </div>
     </ThemeProvider>
   );

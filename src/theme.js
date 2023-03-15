@@ -7,22 +7,40 @@ export const customTheme = createTheme({
             main: '#006FF9',
             hover: '#025AC7'
         },
+        secondary: {
+            main: '#FFFFFF',
+            hover: '#006FF9',
+            border: '#006FF9'
+        },
         danger: {
             main: '#F84367',
             hover: '#D4294B'
+        },
+        disabled: {
+            main: '#E5E6EB'
         }
     },
     text: {
-        primary: '#FFFFFF',
-        danger: '#FFFFFF'
+        primary: {
+            main: '#FFFFFF'
+        },
+        secondary: {
+            main: '#006FF9',
+            hover: '#FFFFFF'
+        },
+        danger: {
+            main: '#FFFFFF'
+        },
+        disabled: {
+            main: '#B0B4C5'
+        }
     },
     typography: {
         body1: {
-            fontFamily: 'Nunito',
+            fontSize: '16px',
             lineHeight: '24px',
             fontWeight: 400,
-            textTransform: 'none',
-            fontSize: '16px',
+            textTransform: 'none'
         }
     }
   });
