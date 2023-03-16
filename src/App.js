@@ -9,11 +9,20 @@ function App() {
     <ThemeProvider theme={customTheme}>
       <Font />
       <div className="App">
-        <MyButton color="primary" endIcon={<FeatherIcon.ChevronDown size={24} />}>Primary</MyButton>
-        <MyButton color="secondary" startIcon={<FeatherIcon.Award size={24} />}>Secondary</MyButton>
-        <MyButton color="danger">Danger</MyButton>
-        <MyButton color="danger" disabled>Disabled</MyButton>
-        <MyButton color="danger" loading variant="contained">Loading</MyButton>
+        <div className="Spaced-div">
+          <MyButton color="primary" endIcon={<FeatherIcon.ChevronDown size={24} />}>Primary</MyButton>
+          <MyButton color="secondary" startIcon={<FeatherIcon.Award size={24} />}>Secondary</MyButton>
+          <MyButton color="danger">Danger</MyButton>
+          <MyButton color="danger" disabled>Disabled</MyButton>
+          <MyButton color="danger" loading variant="contained">Loading</MyButton>
+        </div>
+        <div className="Spaced-div">
+          <MyButton color="primary" endIcon={<FeatherIcon.ChevronDown size={24} />} small>Primary</MyButton>
+          <MyButton color="secondary" startIcon={<FeatherIcon.Award size={24} />} small>Secondary</MyButton>
+          <MyButton color="danger" small>Danger</MyButton>
+          <MyButton color="danger" disabled small>Disabled</MyButton>
+          <MyButton color="danger" loading variant="contained" small>Loading</MyButton>
+        </div>
       </div>
     </ThemeProvider>
   );

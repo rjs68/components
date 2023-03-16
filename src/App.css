@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.Spaced-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 16px 0px;
+}
+ 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

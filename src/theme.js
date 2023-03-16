@@ -42,7 +42,8 @@ export const customTheme = createTheme({
             fontWeight: 400,
             textTransform: 'none'
         }
-    }
+    },
+    space: ['4px', '6px', '8px', '16px', '32px']
   });
 
 export const Font = createGlobalStyle`
