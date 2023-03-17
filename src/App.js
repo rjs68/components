@@ -6,6 +6,7 @@ import { MyCheckbox } from './components/checkbox';
 import * as FeatherIcon from 'react-feather';
 
 function App() {
+  console.log('something');
   return (
     <ThemeProvider theme={customTheme}>
       <Font />
