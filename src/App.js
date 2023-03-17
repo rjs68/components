@@ -2,6 +2,7 @@ import './App.css';
 import { ThemeProvider } from '@mui/material/styles';
 import { customTheme, Font } from './theme';
 import { MyButton } from './components/Button';
+import { MyCheckbox } from './components/checkbox';
 import * as FeatherIcon from 'react-feather';
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
           <MyButton color="danger" small>Danger</MyButton>
           <MyButton color="danger" disabled small>Disabled</MyButton>
           <MyButton color="danger" loading variant="contained" small>Loading</MyButton>
+        </div>
+        <div className="spaced-div">
+          <MyCheckbox/>
         </div>
       </div>
     </ThemeProvider>
