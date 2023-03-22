@@ -17,10 +17,3 @@ Button.propTypes = {
   small: PropTypes.bool,
   loading: PropTypes.bool
 };
-
-Button.defaultProps = {
-  color: 'primary',
-  disabled: false,
-  small: false,
-  loading: false
-};

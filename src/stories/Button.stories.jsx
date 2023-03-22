@@ -9,11 +9,7 @@ export default {
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
     color: { 
-      control: 'select', options: ['primary', 'secondary', 'danger'],
-      table: {
-        type: { summary: 'select' },
-        defaultValue: { summary: 'Step' },
-      },
+      control: 'select', options: ['primary', 'secondary', 'danger']
     },
     disabled: { control: 'boolean' },
     loading: { control: 'boolean' },
@@ -25,5 +21,11 @@ export default {
 const Template = (args) => <Button {...args} />;
 
 export const MyButton = Template.bind({});
+MyButton.args = {
+  color: 'primary',
+  disabled: false,
+  small: false,
+  loading: false
+}
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 
